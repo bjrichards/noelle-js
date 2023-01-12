@@ -1,0 +1,27 @@
+{
+  "name": "noelle-js",
+  "version": "1.0.0",
+  "description": "2-D game framework",
+  "main": "dist/noelle-js.cjs.js",
+  "module": "dist/noelle-js.esm.js",
+  "browser": "dist/noelle-js.umd.js",
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs",
+    "test": "node test/spec",
+    "pretest": "npm run build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "rollup": "^3.9.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "author": "",
+  "license": "ISC"
+}
